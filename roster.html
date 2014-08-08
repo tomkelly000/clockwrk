@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+
+    <script type="text/javascript">
+        function toggle(id) {
+          // hide all players
+          $(".player").css('display', 'none');
+          // make current player visible
+          $('#' + id).css('display', 'table-cell')
+        }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <ul class="nav nav-tabs pull-right">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Roster</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </div>
+
+    <div class="container roster" style="display:table;">
+      <div class="thirteen-fourteen" style="display:table-row;">
+        <div class="players" style="display:table-cell;">
+          <!--Sidebar content-->
+          <ul class="list-group">
+            <li class="list-group-item"><h4><a href="#" onclick="toggle('a-team');">A-team 2013-2014</a></h4></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Alex Fogg</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('kiffa');">Kiffa Conroy</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('sincerely');">Jonathan Chen</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('schmittay');">Ross Smith*</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('teehan');">Daniel Teehan</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('sqwang');">Stephen Wang</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('hk');">Julian Helguero-Kelley*</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('sean');">Sean Treacy</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('peter');">Peter Luo</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('smylez');">Adam Smyles</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('jae);">Jae Young Lee</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('dean');">Dean Makino</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('puffy');">David Beck</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('zweed');">Zach Weed</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('anthony');">Anthony Markowitz</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('matt');">Matt Rogers</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('tk');">Tom Kelly</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('jarred');">Jarred Mihalik</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('malcolm');">Malcolm Deck</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('matl');">Matt Matl</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('matine');">Matine Yuksel</a></li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item"><h4><a href="#" onclick="toggle('b-team');">B-team 2013-2014</a></h4></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">James Almeida</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Andre Arslan</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Max Bedford</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Eric Blum</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Robert DeLuca</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Blake Lawson</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Dan Ma</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Victor Xu</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">TC Zhang</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Roy Zhao</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Tony Jin</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Tom Colocci</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Mark Tengi</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Simon Gee</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Jeremy Zullow</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Hunter Rex</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Ted Callon</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Christian Gray</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Jesse Ramirez</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Maxson Jarecki</a></li>
+            <li class="list-group-item"><a href="#" onclick="toggle('fogg');">Alec Jacob Ranzato</a></li>
+          </ul>
+        </div>
+          <div id="a-team" class="player" style="display:table-cell; background-image:url('whole-team.jpg');"></div>
+          <div id="fogg" class="player">al;sdjkf;alksdjfal;kdjs</div>
+          <div id="kiffa" class="player">asdfasdf</div>
+          <div id="sincerely" class="player">asdfsadf</div>
+          <div id="schmittay" class="player" style="background-image:url('ross-sky.png');">asdfasdf</div>
+          <div id="teehan" class="player">asdfasdf</div>
+          <div id="sqwang" class="player">asdfasdf</div>
+          <div id="hk" class="player">asdfasdfasdf</div>
+          <div id="sean" class="player">asdfasdf</div>
+          <div id="peter" class="player" style="background-image:url('peter-pickle.png');">asdfasdfasdf</div>
+          <div id="smylez" class="player">asdfasdfa</div>
+          <div id="jae" class="player">asdfasdf</div>
+          <div id="dean" class="player">asdfasdf</div>
+          <div id="puffy" class="player">adsfasdf</div>
+          <div id="zweed" class="player">asdfasdfasdf</div>
+          <div id="anthony" class="player">asdfsdfdsf</div>
+          <div id="matt" class="player" style="background-image:url('matt-sky.png');">fdasdfasdf</div>
+          <div id="tk" class="player">fasdfasdfddfdfs</div>
+          <div id="jarred" class="player" style="background-image:url('jarred-footblock.png');"></div>
+          <div id="malcolm" class="player">asdfadfsdf</div>
+          <div id="matl" class="player">asdfsfdsd</div>
+          <div id="matine" class="player">asdfdsdsfsds</div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+
+            <img src="logo2.png" id="logo"/>
+            <ul>
+                <li><a href="mailto:clockwrk@princeton.edu">Email</a></li>
+                <li><a href="https://www.facebook.com/ClockworkUltimate">Facebook</a></li>
+                <li>
+                    <a href="https://twitter.com/clockworkultima" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @clockworkultima</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>
