@@ -61,6 +61,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.roster .bio {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  margin: 10px;
+}
+
+.bio h4, p{
+  margin-left: 10px;
+  margin-right:-100px;
+  color: #efefef;
+}
+
 .players {
   width: 20%;
 }
