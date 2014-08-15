@@ -1,5 +1,6 @@
 body {
-  background-color: #efefef;;
+  background-color: #FFF;
+  min-width: 780px;
 }
 .nav a {
   color: #5a5a5a;
@@ -12,11 +13,23 @@ body {
   display: inline;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .jumbotron {
   background-image:url('/img/os-sky.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  height:800px;
+  height:760px;
+}
+
+.maintitle {
+  width: 308px;
+  padding:10px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 4px;
 }
 
 .jumbotron .container {
@@ -25,23 +38,27 @@ body {
 }
 
 .jumbotron h1 {
-  color: #fff;
+  color: #666;
   font-size: 48px;
-  font-family: 'Shift', sans-serif;
-  font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  text-shadow: none;
 }
 
 .jumbotron p {
   font-size: 20px;
-  color: #fff;
+  margin-bottom: 0px;
+  color: #666;
+  text-shadow: none;
 }
 
 .info {
-  background-color: #efefef;
+  background-color: #FFF;
+  padding: 20px;
 }
 
 .info h3 {
-  font-family: 'Shift', sans-serif;
+  font-family: 'PT Sans', 'Shift', sans-serif;
   font-size: 18px;
   font-weight: bold;
   margin-left: auto;
@@ -51,6 +68,7 @@ body {
 
 .roster {
 }
+
 .roster a {
   color: black;
 }
@@ -80,7 +98,6 @@ padding-bottom: 56.25%;
 padding-top: 60px; overflow: hidden;
 }
 
-
 .responsive-video iframe,
 .responsive-video object,
 .responsive-video embed {
@@ -104,7 +121,10 @@ height: 100%;
   list-style:none;
   padding:8px;
   text-align: right;
-  margin-top: 30px;
+}
+
+.footer ul li {
+  margin: 10px inherit;
 }
 
 .footer a {
