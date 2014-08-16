@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
   </head>
 
   <body>
@@ -30,16 +31,23 @@
 
     <div class="footer">
         <div class="container">
-
+          <div id="outer">
             <img src="img/logo2.png" id="logo"/>
-            <ul>
-                <li><a href="mailto:clockwrk@princeton.edu">Email</a></li>
-                <li><a href="https://www.facebook.com/ClockworkUltimate">Facebook</a></li>
-                <li>
-                    <a href="https://twitter.com/clockworkultima" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @clockworkultima</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </li>
-            </ul>
+            <div id="inner">
+              <ul>
+                  <li><a href="mailto:clockwrk@princeton.edu">Email</a></li>
+                  <li><a href="https://www.facebook.com/ClockworkUltimate">Facebook</a></li>
+                  <li>
+                      <a href="https://twitter.com/clockworkultima" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @clockworkultima</a>
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </li>
+              </ul>
+            </div>
+            <script>
+              $('#logo').css('width', parseInt($('.footer #inner').css('height')) + 13);
+              // + 13 because the twitter element hasn't loaded yet - not sure how to get around that
+            </script>
+          </div>
         </div>
     </div>
   </body>
