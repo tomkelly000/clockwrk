@@ -70,7 +70,7 @@ body {
 }
 
 .roster a {
-  color: black;
+  color: #333;
 }
 
 .roster .player {
@@ -128,7 +128,7 @@ height: 100%;
 }
 
 .footer a {
-  color: black;
+  color: #333;
   text-decoration: underline;
 }
 
