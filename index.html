@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
   </head>
 
   <body>
@@ -23,12 +24,16 @@
 
     <div class="container">
       <div class="jumbotron">
-           <div class="maintitle">
-              <h1>Clockwork</h1>
-              <p>Princeton Men's Ultimate Frisbee</p>
-            </div>
+        <div class="maintitle">
+          <h1>Clockwork</h1>
+          <p>Princeton Men's Ultimate Frisbee</p>
+        </div>
       </div>
     </div>
+    <script>
+      // set the height of the background image
+      $('.jumbotron').css('height', parseInt($('.jumbotron').css('width')) * 482 / 724);
+    </script>
 
     <div class="info">
         <div class="container">

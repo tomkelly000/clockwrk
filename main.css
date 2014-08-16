@@ -19,10 +19,9 @@ body {
 }
 
 .jumbotron {
-  background-image:url('img/os-sky.jpg');
+  background-image:url('img/os-sky.jpg'); /* 482 * 724 */
   background-repeat: no-repeat;
   background-size: 100%;
-  height:760px;
 }
 
 .maintitle {
