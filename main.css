@@ -1,6 +1,5 @@
 body {
-  background-color: #FFF;
-  min-width: 780px;
+  background-color: #efefef;
   color: #555;
 }
 .nav a {
@@ -52,7 +51,6 @@ body {
 }
 
 .info {
-  background-color: #FFF;
   padding: 20px;
 }
 
@@ -68,14 +66,42 @@ body {
 .roster {
 }
 
+.roster #yearlist {
+  list-style: none;
+}
+.roster #yearlist li {
+  display: inline;
+  margin: 4px 8px;
+}
+
 .roster a {
   color: #333;
 }
 
-.roster .player {
+.roster .year {
   display: none;
-  background-size: contain;
+}
+.roster .captains {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: center;
+}
+.roster .player {
+  padding-top: 50px;
+}
+.roster .player-image {
+  padding-bottom: 100%;
   background-repeat: no-repeat;
+  background-position: center top;
+
+}
+.roster .player-content {
+  text-align: left;
+  color: #333;
+  overflow: auto;
+  height: 200px;
+  padding-left: 25px;
 }
 
 .players {
