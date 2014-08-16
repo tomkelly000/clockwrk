@@ -27,12 +27,15 @@
           $('#' + year).css('display', 'block')
           // set the height of the team background picture
           ratio = 0;
-          switch (year){
+          switch (year) {
             case 2013:
               ratio = 1365 / 2048;
               break;
+            case 2014:
+              ratio = 1361 / 2048;
+              break;
           }
-          $('#' + year + ' .jumbotron').css('height', parseInt($('.jumbotron').css('width')) * ratio);
+          $('#' + year + ' .jumbotron').css('height', parseInt($('#' + year + ' .jumbotron').css('width')) * ratio);
         }
 
 
@@ -53,10 +56,11 @@
 
     <div class="container roster">
       <ul id="yearlist">
-        <li><a href="#" onclick="switchYear('2014');">2013-2014</a></li>
-        <li><a href="#" onclick="switchYear('2013');">2012-2013</a></li>
+        <li><a href="#" onclick="switchYear(2014);">2013-2014</a></li>
+        <li><a href="#" onclick="switchYear(2013);">2012-2013</a></li>
       </ul>
       <div class="year" id="2014" style="display:block;">
+        <div class="jumbotron" style="background-image: url('img/2014/whole-team.jpg');"></div>
         <div class="captains">
           <h4>Captains</h4>
         </div>
@@ -509,6 +513,7 @@
         $(this).find('.player-image').css('opacity', 1);
         $(this).find('.player-content').css('display', 'none');
       });*/
+      switchYear(2014);
 
     </script>
   </body>
