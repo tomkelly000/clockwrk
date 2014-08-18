@@ -7,7 +7,7 @@
 
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 
@@ -54,7 +54,7 @@
     </div>
     </nav>
 
-    <a href="roster2.html">Check the alternate roster page</a>
+    <a href="roster.html">Return to the original roster page</a>
     <div class="container roster">
       <ul id="yearlist">
         <li><a href="#" onclick="switchYear(2014);">2013-2014</a></li>
@@ -505,15 +505,19 @@
         </div>
     </div>
     <script>
-      /*
+      ///*
       $('.player').mouseenter(function() {
         $(this).find('.player-image').css('opacity', .2);
-        $(this).find('.player-content').css('display', 'block');
+        $(this).find('.player-content').css({
+          'display': 'block',
+          'height': $(this).siblings('.thumbnail').css('height')
+        });
       });
       $('.player').mouseleave(function() {
         $(this).find('.player-image').css('opacity', 1);
         $(this).find('.player-content').css('display', 'none');
-      });*/
+      });
+      //*/
       switchYear(2014);
 
     </script>
