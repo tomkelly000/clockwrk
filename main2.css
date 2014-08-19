@@ -82,13 +82,11 @@ body {
   display: none;
 }
 .roster .captains {
-  padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #dbdbdb;
   text-align: center;
 }
 .roster .player {
-  margin-top: 50px;
 }
 .roster .player-image {
   background-repeat: no-repeat;
@@ -103,7 +101,7 @@ body {
   display: none;
   position: absolute;
   top: 0;
-  padding-right: 8px;
+  padding-right: 20px;
 }
 
 .players {
@@ -162,7 +160,7 @@ height: 100%;
 }
 
 .footer a {
-  color: #333;
+  /*color: #333;*/
   text-decoration: underline;
 }
 
