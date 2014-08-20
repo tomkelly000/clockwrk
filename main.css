@@ -104,6 +104,14 @@ body {
   padding-right: 20px;
 }
 
+.roster .clockblock {
+  padding-top: 10px;
+  border-top: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: center;
+}
+
 .players {
   width: 20%;
 }
@@ -160,7 +168,7 @@ height: 100%;
 }
 
 .footer a {
-  /*color: #333;*/
+  color: #333;
   text-decoration: underline;
 }
 
