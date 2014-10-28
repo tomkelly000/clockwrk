@@ -13,6 +13,7 @@
 
     <script type="text/javascript">
         function toggle(id) {
+
           // hide all players
           $(".player").css('display', 'none');
           // make current player visible
@@ -23,8 +24,12 @@
           year = parseInt(year);
           // hide all years
           $(".year").css('display', 'none');
+          // un-underline all years
+          $('#yearlist a').css('text-decoration', 'none')
           // make selected year visible
           $('#' + year).css('display', 'block')
+          // underline current year
+          $('#' + year + 'link').css('text-decoration', 'underline')
           // set the height of the team background picture
           ratio = 0;
           switch (year) {
@@ -36,7 +41,9 @@
               break;
           }
           $('#' + year + ' .jumbotron').css('height', parseInt($('#' + year + ' .jumbotron').css('width')) * ratio);
+
         }
+
 
 
     </script>
@@ -54,11 +61,10 @@
     </div>
     </nav>
 
-    <a href="roster2.html">check the original roster page</a>
     <div class="container roster">
       <ul id="yearlist">
-        <li><a href="#" onclick="switchYear(2014);">2013-2014</a></li>
-        <li><a href="#" onclick="switchYear(2013);">2012-2013</a></li>
+        <li><a id="2014link" href="#" onclick="switchYear(2014);">2013-2014</a></li>
+        <li><a id="2013link" href="#" onclick="switchYear(2013);">2012-2013</a></li>
       </ul>
       <div class="year" id="2014" style="display:block;">
         <div class="jumbotron" style="background-image: url('img/2014/whole-team.jpg');"></div>
